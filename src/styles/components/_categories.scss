@@ -1,0 +1,37 @@
+@import "../variables";
+
+
+.categories {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+  border-bottom: 1px solid transparent;
+  border-image: var(--border-gradient);
+  border-top-image: var(--moz-border-gradient);
+  border-right-image: var(--moz-border-gradient);
+  border-left-image: var(--moz-border-gradient);
+  border-bottom-image: var(--moz-border-gradient);
+  border-image-slice: 1;
+
+
+
+  li {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--cat-background);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+    &:hover {
+      background: var(--border-gradient);
+    }
+
+    &._active {
+
+      background: var(--border-gradient);
+    }
+  }
+}

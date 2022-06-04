@@ -1,0 +1,51 @@
+.switch-btn {
+  position: absolute;
+  visibility: hidden;
+  top: -130px;
+  right: 20px;
+
+  &::before{
+    content: '';
+    border: 1px solid white;
+    visibility: visible;
+    display: inline-block;
+    width: 72px;
+    height: 38px;
+    border-radius: 19px;
+    background: #bfbfbf;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+
+    transition-duration: 300ms;
+  }
+
+  &::after {
+    content: "";
+    cursor: pointer;
+    visibility: visible;
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    background: #fff;
+    top: 3px;
+    left: 3px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+  }
+  &:checked{
+    &::before{
+    background: #212121;
+
+    }
+    &::after{
+    left: 37px;
+
+    }
+  }
+}
+
+

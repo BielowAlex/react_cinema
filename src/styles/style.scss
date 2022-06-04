@@ -1,0 +1,49 @@
+@import "imports";
+
+
+
+
+body {
+  padding: 150px 50px 50px 50px;
+  background-image: var(--background-image);
+  font-family: 'WhyteInktrap', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  position: relative;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid transparent;
+  color: var(--font-color);
+  background: var(--background-color);
+  background-clip: padding-box;
+
+
+  &::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: var(--border-gradient);
+    content: '';
+    z-index: -1;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+
+
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+
+
+

@@ -1,0 +1,100 @@
+:root {
+  --background-image-light:url("/public/img/back_popcorn.jpg");
+  --background-image-dark:url("/public/img/back_popcorn_dark.jpg");
+  --background-image:var(--background-image-light);
+  --font-color-light:black;
+  --font-color-dark:white;
+  --font-color:var(--font-color-light);
+  --background-color-light:white;
+  --background-color-dark:#212121;
+  --background-color:var(--background-color-light);
+  --border-gradient-light:linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --border-gradient-dark:linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  --border-gradient:var(--border-gradient-light);
+  --moz-border-gradient-light:-moz-linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --moz-border-gradient-dark:-moz-linear-gradient(40.71deg, #73E0A9 0%, #5B68DF 100%);
+  --moz-border-gradient:var(--moz-border-gradient-light);
+  --webkit-border-gradient-light:-webkit-linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --webkit-border-gradient-dark:-webkit-linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  --webkit-border-gradient:var(--webkit-border-gradient-light);
+  --cat-background-light:grey;
+  --cat-background-dark:rgba(91, 104, 223, 0.55);
+  --cat-background:var(--cat-background-light);
+  --cart-border-light:#212121;
+  --cart-border-dark:#73E0A9;
+  --cart-border:var(--cart-border-light);
+  --cart-border-active-light:#09090c;
+  --cart-border-active-dark:#5B68DF;
+  --cart-border-active:var(--cart-border-active-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid transparent;
+  border-image: var(--border-gradient);
+  -moz-border-image: var(--moz-border-gradient);
+  -webkit-border-image: var(--webkit-border-gradient);
+  border-image-slice: 1;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header .logo .logo_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.header .logo .logo_text h3 {
+  text-transform: uppercase;
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+.header .logo .logo_text span {
+  color: grey;
+  font-size: 12px;
+}
+.header .user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 127px;
+  height: 50px;
+  column-gap: 10px;
+}
+.header .user .avatar {
+  position: absolute;
+  top: 0;
+  left: 38.5px;
+  background: white;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+.header .user .username {
+  position: absolute;
+  z-index: 0;
+  top: 25px -7px;
+  color: var(--font-color);
+  right: 38.5px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.header .user:hover .avatar {
+  left: 0;
+}
+.header .user:hover .username {
+  right: 0;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=header.css.map */

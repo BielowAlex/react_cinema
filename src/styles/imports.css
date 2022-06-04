@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("/public/fonts/WhyteInktrap-ExtraLight.woff2"), url("/public/fonts/WhyteInktrap-ExtraLight.woff");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("/public/fonts/WhyteInktrap-Regular.woff2"), url("/public/fonts/WhyteInktrap-Regular.woff");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("/public/fonts/WhyteInktrap-Book.woff2"), url("/public/fonts/WhyteInktrap-Book.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("/public/fonts/WhyteInktrap-Bold.woff2"), url("/public/fonts/WhyteInktrap-Bold.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("/public/fonts/WhyteInktrap-Heavy.woff2"), url("/public/fonts/WhyteInktrap-Heavy.woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header .logo .logo_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.header .logo .logo_text h3 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.header .logo .logo_text span {
+  color: grey;
+  font-size: 12px;
+}
+.header .user {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.header .user .avatar {
+  background: grey;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.categories {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}
+.categories li {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(128, 128, 128, 0.24);
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.categories li:hover {
+  background: #111111;
+}
+.categories li._active {
+  background: #111111;
+}
+
+.movies_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 20px;
+}
+.movies_list .movies_cart {
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+  border-radius: 20px;
+  transition: all 0.4s linear;
+}
+.movies_list .movies_cart p {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  color: grey;
+  text-align: justify;
+}
+.movies_list .movies_cart h3 {
+  padding-top: 2px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.24);
+  font-size: 18px;
+  font-weight: 500;
+}
+.movies_list .movies_cart:hover {
+  background: #111111;
+}
+
+/*# sourceMappingURL=imports.css.map */

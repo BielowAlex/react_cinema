@@ -1,0 +1,25 @@
+.navigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  padding: 40px 0;
+
+  .btn {
+    cursor: pointer;
+    padding: 5px 0;
+    width: 72px;
+    text-align: center;
+    background: var(--cat-background);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+
+    &:hover {
+      background: var(--border-gradient);
+    }
+
+
+  }
+
+}

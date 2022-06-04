@@ -1,0 +1,109 @@
+@import "../variables";
+
+.movies_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 20px;
+
+  .movies_cart {
+    cursor: pointer;
+    overflow: hidden;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    border: 1px solid var(--cart-border);
+
+    border-radius: 20px;
+    transition: all 0.4s linear;
+
+    .desc {
+      width: 200px;
+      height: 260px;
+      position: relative;
+
+      .play {
+        position: absolute;
+        top: 130px - 25px;
+        left: 100px - 25px;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.4s ease;
+      }
+
+    }
+
+    .poster {
+      filter: blur(0px);
+      transition: all 0.4s linear;
+
+    }
+
+    p {
+      height: 55px;
+      overflow: hidden;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: 200;
+      color: var(--font-color);
+      text-align: justify;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      width: 100%;
+      background: var(--cart-border);
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      transition: all 0.4s linear;
+      height: 60px;
+    }
+
+    &:hover {
+      border: 1px solid var(--cart-border-active);
+
+      h3 {
+        background: var(--cart-border-active);
+      }
+
+      .rating {
+        background: var(--cart-border-active);
+      }
+
+      .poster {
+        filter: blur(2px);
+      }
+
+      .play {
+        transform: scale(1);
+        opacity: 1;
+        top: 130px - 25px;
+        left: 100px - 25px;
+      }
+    }
+
+    .rating {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      background: var(--cart-border);
+      color: white;
+      transition: all 0.4s linear;
+
+    }
+  }
+
+
+}

@@ -1,0 +1,39 @@
+:root{
+  --background-image-light:url("/public/img/back_popcorn.jpg");
+  --background-image-dark:url("/public/img/back_popcorn_dark.jpg");
+  --background-image:var(--background-image-light);
+
+  --font-color-light:black;
+  --font-color-dark:white;
+  --font-color:var(--font-color-light);
+
+  --background-color-light:white;
+  --background-color-dark:#212121;
+  --background-color:var(--background-color-light);
+
+  --border-gradient-light:linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --border-gradient-dark:linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  --border-gradient:var(--border-gradient-light);
+
+  --moz-border-gradient-light:-moz-linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --moz-border-gradient-dark:-moz-linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  --moz-border-gradient:var(--moz-border-gradient-light);
+
+  --webkit-border-gradient-light:-webkit-linear-gradient(90.71deg, #212121 0%, #09090c 100%);
+  --webkit-border-gradient-dark:-webkit-linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  --webkit-border-gradient:var(--webkit-border-gradient-light);
+
+  --cat-background-light:grey;
+  --cat-background-dark:rgba(91, 104, 223, 0.55);
+  --cat-background:var(--cat-background-light);
+
+  --cart-border-light:#212121;
+  --cart-border-dark:#73E0A9;
+  --cart-border:var(--cart-border-light);
+
+  --cart-border-active-light:#09090c;
+  --cart-border-active-dark:#5B68DF;
+  --cart-border-active:var(--cart-border-active-light);
+
+
+}
