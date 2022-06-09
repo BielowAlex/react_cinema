@@ -8,10 +8,7 @@ const moviesService = {
     getMovieByID:(movieID)=> axiosService
         .get(`${urls.movie}/${movieID}?append_to_response=videos`),
 
-    getGenres:()=>axiosService.get(urls.genres),
-
-    search:(value,pageNum)=>axiosService
-        .get(`${urls.search}?query=${value}&page=${pageNum}`),
+    getGenres:()=>axiosService.get(urls.genres)
 }
 
 export {

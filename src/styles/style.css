@@ -172,10 +172,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   border-bottom: 1px solid transparent;
   border-image: var(--border-gradient);
-  border-top-image: var(--moz-border-gradient);
-  border-right-image: var(--moz-border-gradient);
-  border-left-image: var(--moz-border-gradient);
-  border-bottom-image: var(--moz-border-gradient);
   border-image-slice: 1;
 }
 .header .logo {
@@ -278,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   visibility: hidden;
   top: -130px;
-  right: 20px;
+  right: 60px;
 }
 .switch-btn::before {
   content: "";
@@ -355,10 +351,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 15px;
   border-bottom: 1px solid transparent;
   border-image: var(--border-gradient);
-  border-top-image: var(--moz-border-gradient);
-  border-right-image: var(--moz-border-gradient);
-  border-left-image: var(--moz-border-gradient);
-  border-bottom-image: var(--moz-border-gradient);
   border-image-slice: 1;
 }
 .categories li {
@@ -550,7 +542,9 @@ h1, h2, h3, h4, h5, h6 {
 .movie .desc {
   display: flex;
   column-gap: 20px;
-  border-bottom: 1px solid var(--cart-border);
+  border-bottom: 1px solid transparent;
+  border-image: var(--border-gradient);
+  border-image-slice: 1;
 }
 .movie .desc .poster {
   display: flex;

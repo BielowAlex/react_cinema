@@ -9,7 +9,7 @@ const MovieCartLoader = () => {
             height={351}
             viewBox="0 0 200 351"
             backgroundColor="#858585"
-            foregroundColor="#919191"
+            foregroundColor="#a3a3a3"
         >
             <rect x="43" y="232" rx="0" ry="0" width="0" height="2" />
             <rect x="0" y="0" rx="20" ry="20" width="200" height="351" />
